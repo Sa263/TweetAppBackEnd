@@ -21,7 +21,7 @@ $ C:\kafka_2.12-2.8.1\bin\windows\kafka-topics.bat --list --zookeeper localhost:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Step-4 : Start the Application in STS/Eclipse 
+Step-4 : Start the Application in STS/Eclipse ...
 
 Step-5 : Check whether the actuator is working or not using the below link in Web-browser.(usage: to check the Health of the apllication)
 
