@@ -1,0 +1,404 @@
+2022-04-13 13:56:22.735  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Starting ApiApplication using Java 17.0.2 on DESKTOP-AQSLJDD with PID 15164 (C:\Users\dell\Desktop\component2\TweetBackened\target\classes started by dell in C:\Users\dell\Desktop\component2\TweetBackened)
+2022-04-13 13:56:22.735 DEBUG 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-04-13 13:56:22.735  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : No active profile set, falling back to default profiles: default
+2022-04-13 13:56:24.156  INFO 15164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-13 13:56:24.183  INFO 15164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 MongoDB repository interfaces.
+2022-04-13 13:56:24.429  INFO 15164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-04-13 13:56:24.430  INFO 15164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 13:56:24.431  INFO 15164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-04-13 13:56:24.467  INFO 15164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 13:56:24.468  INFO 15164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1725 ms
+2022-04-13 13:56:24.619  INFO 15164 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-13 13:56:24.636  INFO 15164 --- [cluster-rtt-ClusterId{value='625689308a1a394038d68a88', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:236}] to localhost:27017
+2022-04-13 13:56:24.636  INFO 15164 --- [cluster-ClusterId{value='625689308a1a394038d68a88', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:235}] to localhost:27017
+2022-04-13 13:56:24.637  INFO 15164 --- [cluster-ClusterId{value='625689308a1a394038d68a88', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11987500}
+2022-04-13 13:56:24.686  INFO 15164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 13:56:25.396  INFO 15164 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 13:56:25.523  INFO 15164 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:56:25.936  INFO 15164 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-13 13:56:25.963  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-04-13 13:56:25.963  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-04-13 13:56:25.964  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1649838385963
+2022-04-13 13:56:26.121  INFO 15164 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-3, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-04-13 13:56:26.122  INFO 15164 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-04-13 13:56:26.138  INFO 15164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-13 13:56:26.292  INFO 7768 --- [restartedMain] com.tweetapp.api.ApiApplication          : Starting ApiApplication using Java 17.0.2 on DESKTOP-AQSLJDD with PID 7768 (C:\Users\dell\Desktop\component2\TweetBackened\target\classes started by dell in C:\Users\dell\Desktop\component2\TweetBackened)
+2022-04-13 13:56:26.302  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-3, groupId=group_id] Cluster ID: SCmSSm2PSQGSMOjuZrKMNw
+2022-04-13 13:56:26.301 DEBUG 7768 --- [restartedMain] com.tweetapp.api.ApiApplication          : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-04-13 13:56:26.304  INFO 7768 --- [restartedMain] com.tweetapp.api.ApiApplication          : No active profile set, falling back to default profiles: default
+2022-04-13 13:56:26.332  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Discovered group coordinator DESKTOP-AQSLJDD:9092 (id: 2147483647 rack: null)
+2022-04-13 13:56:26.333  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:26.363  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-04-13 13:56:26.364  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:26.409  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Finished assignment for group at generation 73: {consumer-group_id-3-518268e4-7eed-4723-acc9-af86d86518ed=Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])}
+2022-04-13 13:56:26.457  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Successfully joined group with generation 73
+2022-04-13 13:56:26.457  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])
+2022-04-13 13:56:26.458  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 13:56:26.488  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:26.489  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Setting offset for partition kafkaMessage-2 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:26.489  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Setting offset for partition kafkaMessage-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:26.501  INFO 7768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-13 13:56:26.502  INFO 7768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-13 13:56:26.600  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 13:56:26.762  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Started ApiApplication in 4.958 seconds (JVM running for 4294.959)
+2022-04-13 13:56:26.773  INFO 15164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-13 13:56:27.233  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 13:56:27.234  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 13:56:27.234  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-3, groupId=group_id] Member consumer-group_id-3-518268e4-7eed-4723-acc9-af86d86518ed sending LeaveGroup request to coordinator DESKTOP-AQSLJDD:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-04-13 13:56:27.234  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-3, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-04-13 13:56:27.234  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-04-13 13:56:27.246  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-04-13 13:56:27.247  INFO 15164 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:56:27.391  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Starting ApiApplication using Java 17.0.2 on DESKTOP-AQSLJDD with PID 15164 (C:\Users\dell\Desktop\component2\TweetBackened\target\classes started by dell in C:\Users\dell\Desktop\component2\TweetBackened)
+2022-04-13 13:56:27.391 DEBUG 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-04-13 13:56:27.392  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : No active profile set, falling back to default profiles: default
+2022-04-13 13:56:28.374  INFO 15164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-13 13:56:28.402  INFO 15164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 MongoDB repository interfaces.
+2022-04-13 13:56:28.564  INFO 15164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-04-13 13:56:28.565  INFO 15164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 13:56:28.566  INFO 15164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-04-13 13:56:28.609  INFO 15164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 13:56:28.610  INFO 15164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-04-13 13:56:28.762  INFO 15164 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-13 13:56:28.772  INFO 15164 --- [cluster-ClusterId{value='625689348a1a394038d68a89', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:237}] to localhost:27017
+2022-04-13 13:56:28.772  INFO 15164 --- [cluster-ClusterId{value='625689348a1a394038d68a89', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3416500}
+2022-04-13 13:56:28.798  INFO 15164 --- [cluster-rtt-ClusterId{value='625689348a1a394038d68a89', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:238}] to localhost:27017
+2022-04-13 13:56:28.799  INFO 15164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-13 13:56:28.995  INFO 7768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-13 13:56:29.088  INFO 7768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 MongoDB repository interfaces.
+2022-04-13 13:56:29.200  INFO 15164 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 13:56:29.312  INFO 15164 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:56:29.566  INFO 15164 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-13 13:56:29.572  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-04-13 13:56:29.572  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-04-13 13:56:29.572  INFO 15164 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1649838389572
+2022-04-13 13:56:29.707  INFO 15164 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-4, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-04-13 13:56:29.707  INFO 15164 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-04-13 13:56:29.718  INFO 15164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-13 13:56:29.723  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-4, groupId=group_id] Cluster ID: SCmSSm2PSQGSMOjuZrKMNw
+2022-04-13 13:56:29.724  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Discovered group coordinator DESKTOP-AQSLJDD:9092 (id: 2147483647 rack: null)
+2022-04-13 13:56:29.725  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:29.731  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-04-13 13:56:29.731  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:29.743  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 75: {consumer-group_id-4-169c9520-6a16-4f33-9327-309a5553d34e=Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])}
+2022-04-13 13:56:29.751  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation 75
+2022-04-13 13:56:29.751  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])
+2022-04-13 13:56:29.752  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 13:56:29.754  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:29.754  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition kafkaMessage-2 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:29.754  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition kafkaMessage-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:29.754  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 13:56:29.991  INFO 15164 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 13:56:29.992  INFO 15164 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 13:56:29.996  INFO 15164 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-04-13 13:56:30.055  INFO 15164 --- [restartedMain] com.tweetapp.api.ApiApplication          : Started ApiApplication in 2.719 seconds (JVM running for 4298.252)
+2022-04-13 13:56:30.064  INFO 15164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-13 13:56:30.121  INFO 7768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-04-13 13:56:30.147  INFO 7768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-13 13:56:30.147  INFO 7768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-04-13 13:56:30.274  INFO 7768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-13 13:56:30.274  INFO 7768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3771 ms
+2022-04-13 13:56:31.098  INFO 7768 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-13 13:56:31.217  INFO 7768 --- [cluster-rtt-ClusterId{value='62568937681bc40b21635338', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:240}] to localhost:27017
+2022-04-13 13:56:31.217  INFO 7768 --- [cluster-ClusterId{value='62568937681bc40b21635338', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:239}] to localhost:27017
+2022-04-13 13:56:31.218  INFO 7768 --- [cluster-ClusterId{value='62568937681bc40b21635338', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37848600}
+2022-04-13 13:56:31.424  WARN 7768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-04-13 13:56:32.974  INFO 7768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-04-13 13:56:33.278  INFO 7768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:56:33.837  INFO 7768 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-13 13:56:33.994  INFO 7768 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-04-13 13:56:33.996  INFO 7768 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-04-13 13:56:33.996  INFO 7768 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1649838393991
+2022-04-13 13:56:34.129  INFO 7768 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-04-13 13:56:34.140  INFO 7768 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-04-13 13:56:34.154  WARN 7768 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+2022-04-13 13:56:34.158  INFO 7768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:56:34.183  INFO 7768 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-13 13:56:34.214  INFO 7768 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-13 13:56:34.252 ERROR 7768 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2022-04-13 13:56:34.730  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: SCmSSm2PSQGSMOjuZrKMNw
+2022-04-13 13:56:34.733  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator DESKTOP-AQSLJDD:9092 (id: 2147483647 rack: null)
+2022-04-13 13:56:34.737  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:34.761  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-04-13 13:56:34.761  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:35.853  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Attempt to heartbeat failed since group is rebalancing
+2022-04-13 13:56:35.865  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 13:56:35.866  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 13:56:35.867  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-04-13 13:56:35.956  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 76: {consumer-group_id-4-169c9520-6a16-4f33-9327-309a5553d34e=Assignment(partitions=[kafkaMessage-2]), consumer-group_id-1-3d45af9d-217d-4988-993f-1e97a80b8d48=Assignment(partitions=[kafkaMessage-0, kafkaMessage-1])}
+2022-04-13 13:56:36.042  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation 76
+2022-04-13 13:56:36.043  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-2])
+2022-04-13 13:56:36.043  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: kafkaMessage-2
+2022-04-13 13:56:36.045  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 76
+2022-04-13 13:56:36.046  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition kafkaMessage-2 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:36.046  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-2]
+2022-04-13 13:56:36.047  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0, kafkaMessage-1])
+2022-04-13 13:56:36.053  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0, kafkaMessage-1
+2022-04-13 13:56:36.073  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:36.074  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:56:36.075  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0, kafkaMessage-1]
+2022-04-13 13:59:55.108  INFO 15164 --- [RMI TCP Connection(78)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-13 13:59:55.489  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Revoke previously assigned partitions kafkaMessage-2
+2022-04-13 13:59:55.493  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-2]
+2022-04-13 13:59:55.497  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-4, groupId=group_id] Member consumer-group_id-4-169c9520-6a16-4f33-9327-309a5553d34e sending LeaveGroup request to coordinator DESKTOP-AQSLJDD:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-04-13 13:59:55.501  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-4, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-04-13 13:59:55.503  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-04-13 13:59:56.029  INFO 15164 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-04-13 13:59:56.051  INFO 15164 --- [RMI TCP Connection(78)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-13 13:59:57.618  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Attempt to heartbeat failed since group is rebalancing
+2022-04-13 13:59:57.657  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0, kafkaMessage-1
+2022-04-13 13:59:57.673  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0, kafkaMessage-1]
+2022-04-13 13:59:57.687  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-04-13 13:59:57.757  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 77: {consumer-group_id-1-3d45af9d-217d-4988-993f-1e97a80b8d48=Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])}
+2022-04-13 13:59:57.856  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 77
+2022-04-13 13:59:57.856  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0, kafkaMessage-1, kafkaMessage-2])
+2022-04-13 13:59:57.857  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 13:59:57.874  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:59:57.874  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-2 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:59:57.875  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 13:59:57.876  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 14:00:00.862  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Attempt to heartbeat failed since group is rebalancing
+2022-04-13 14:00:00.863  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0, kafkaMessage-2, kafkaMessage-1
+2022-04-13 14:00:00.863  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0, kafkaMessage-2, kafkaMessage-1]
+2022-04-13 14:00:00.864  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-04-13 14:00:00.973  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 78: {consumer-group_id-5-2df710cf-dce6-45a2-bba1-ed1c14175620=Assignment(partitions=[kafkaMessage-2]), consumer-group_id-1-3d45af9d-217d-4988-993f-1e97a80b8d48=Assignment(partitions=[kafkaMessage-0, kafkaMessage-1])}
+2022-04-13 14:00:00.983  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 78
+2022-04-13 14:00:00.983  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0, kafkaMessage-1])
+2022-04-13 14:00:00.984  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0, kafkaMessage-1
+2022-04-13 14:00:00.987  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 14:00:00.987  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-AQSLJDD:9092 (id: 0 rack: null)], epoch=0}}
+2022-04-13 14:00:01.092  INFO 7768 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0, kafkaMessage-1]
