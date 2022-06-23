@@ -50,7 +50,7 @@ public class TweetAppController {
 	 */
 	@PostMapping("/register")
 	public ResponseEntity<Object> registerUser(@RequestBody User user) throws UsernameAlreadyExists {
-		logger.info("User created successfully!!!...");
+		logger.info("User created successfully!!!...!!!!!!");
 		return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
 
 	}
