@@ -112,6 +112,7 @@ public class UserServiceImpl implements UserService {
 		Map<String, String> map = new HashMap<String, String>();
 		User user = userRepository.findByUsername(username);
 		user.setPassword(password);
+		user.setConfirmPassword(password);
 		userRepository.save(user);
 		map.put("newPassword", user.getPassword());
 		map.put("resetStatus", Status);
