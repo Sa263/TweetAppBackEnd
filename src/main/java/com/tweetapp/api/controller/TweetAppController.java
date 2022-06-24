@@ -92,7 +92,7 @@ public class TweetAppController {
 		logger.info("Health check..............................");
 
 
-		return "Health123456hvhjvhjjh";
+		return "Health123";
 
 	}
 
